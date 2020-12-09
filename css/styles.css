@@ -115,13 +115,13 @@ SECTION MAIN MENU
 =====================
 */
 .mainmenu {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 .mainmenu .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    /* height: rem; */
 }
 .logo {
     display: flex;
@@ -186,6 +186,14 @@ SECTION MAIN MENU
 SECTION SHOWCASE
 =====================
 */
+.showcase {
+    height: 70vh;
+    width: 100vw;
+    background: var(--clr-grey-placeholder);
+    margin-top: 2rem;
+
+}
+
 
 /* 
 =====================
@@ -217,7 +225,20 @@ FOOTER
 MEDIA QUERIES
 =====================
 */
-
+@media (max-width: 450px){
+    .logo img {
+       display: none;
+    }
+    .logotext1, .logotext2{
+        font-size: 1rem;
+    }
+    .logotext3 {
+        font-size: 0.6rem;
+        top: 1rem;
+    } 
+    .fa-bars {
+        font-size: 1.5rem;
+}
 @media (min-width: 768px) {
 .topbar {
     display:flex;
@@ -229,12 +250,29 @@ MEDIA QUERIES
   display: none;
 
 }
+.links a {
+    font-size: 0.7rem;  
+    padding-left: 1.1rem;
+ }
 }
 
-/* @media (min-width: 992px) {
-    
+@media (min-width: 992px) {
+  .links a {
+    font-size: var(--font-16pt);
+    padding-left: 1.1rem;
+  }
+   
 }
-
+@media (min-width: 1050px) {
+    .links a {
+        font-size: var(--font-16pt);
+        padding-left: 1.1rem;
+      }
+}
 @media (min-width: 1200px) {
-    
-} */
+    .links a {
+        font-size: var(--font-18pt);
+        padding-left: 2rem;
+      }
+}
+
