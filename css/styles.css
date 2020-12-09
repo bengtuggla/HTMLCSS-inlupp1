@@ -121,6 +121,7 @@ SECTION MAIN MENU
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 6rem;
 }
 .logo {
     display: flex;
@@ -131,30 +132,44 @@ SECTION MAIN MENU
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 1rem;
-
+    position: relative;
 }
 .logotext1 {
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     font-size: var(--font-24pt);
     color: var(--clr-grey-textcolour);
+   
 }
 .logotext2 {
     display: flex;
-    align-items: flex-end;
+    /* align-items: flex-end; */
     font-size: var(--font-24pt);
     color: var(--clr-blue-bluecolour);
+    width: 8rem;
 }
 .logotext3 {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
     font-size: var(--font-16pt);
     color: var(--clr-grey-textcolour);
+    position: absolute;
+    top: 2.6rem;
 }
 
 .textcontainer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+}
+
+
+.fa-bars {
+    font-size: 2rem;
+    padding: 0.5rem 0.75rem;
+    color:var(--clr-blue-bluecolour);
+}
+.linkbox:not(.show) {
+    display: none;
 }
 .links {
     display: flex;
@@ -206,6 +221,13 @@ MEDIA QUERIES
 @media (min-width: 768px) {
 .topbar {
     display:flex;
+}
+.linkbox:not(.show) {
+    display: flex;
+}
+.fa-bars {
+  display: none;
+
 }
 }
 
