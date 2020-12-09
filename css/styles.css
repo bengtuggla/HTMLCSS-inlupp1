@@ -1,0 +1,218 @@
+/* 
+=====================
+IMPORTS
+=====================
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+/* 
+=====================
+RESET - Default Styles
+=====================
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+=====================
+VARIABLES
+=====================
+*/
+:root {
+    /* MediaQueries */
+    --viewport-S: min-width: 768px;
+    --viewport-m: min-width: 992px;
+    --viewport-l: min-width: 1200px; 
+     /*Fonts*/
+    --font-primary: 'Roboto', sans-serif;
+    /*Fonts Colours*/
+    --font-16pt: 1.33rem;
+    --font-18pt: 1.5rem;
+    --font-22pt: 1.8rem;
+    --font-24pt: 2rem;
+    --font-30pt: 2.5rem;
+    --font-40pt: 3.33rem;
+    --font-60pt: 5rem;
+    /* Colours */
+    --clr-green-textfooter: #f3fbff;
+    --clr-green-regular: #25e6c8;
+    --clr-grey-ouline: #d2d2d2;
+    --clr-grey-placeholder: #dedede;
+    --clr-grey-placeholder2:#bfbfbf;
+    --clr-grey-textcolour: #626262;
+    --clr-grey-bordercolour: #707070;
+    --clr-white-background: #f7f7f7;
+    --clr-black-titlecolour: #363636;
+    --clr-blue-bluecolour: #2baaec;
+    --clr-blue-backgrounddark: #163c70;
+}
+
+
+/* 
+=====================
+GLOBAL HELP - CLASSES
+=====================
+*/
+body, html {
+    font-family: 'Roboto Slab', serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 73%;
+    margin: auto;
+}
+/* -------------MOBILE VIEW------------------ */
+
+/* 
+=====================
+SECTION TOP MENU
+=====================
+*/
+.topbar {
+    height: 3.75rem;
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    display: flex;
+    align-items: center;
+    display: none;
+}
+.workHours {
+    font-size: 1rem;
+    color: var(--clr-grey-textcolour);
+}
+.fa-clock {
+    font-size: 1.25rem;
+    padding-right: 0.5rem;
+    color: var(--clr-blue-bluecolour);
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    color: var(--clr-blue-bluecolour);
+    align-items: center;
+}
+.socMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 9%;
+    font-size: 1rem;
+}
+.fa-twitter {
+    color: var(--clr-green-regular);
+}
+
+/* 
+=====================
+SECTION MAIN MENU
+=====================
+*/
+.mainmenu {
+    padding: 3rem 0;
+}
+.mainmenu .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+}
+.logotextbox {
+    display: flex;
+    /* align-items: flex-start; */
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 1rem;
+
+}
+.logotext1 {
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--font-24pt);
+    color: var(--clr-grey-textcolour);
+}
+.logotext2 {
+    display: flex;
+    align-items: flex-end;
+    font-size: var(--font-24pt);
+    color: var(--clr-blue-bluecolour);
+}
+.logotext3 {
+    display: flex;
+    align-items: flex-start;
+    font-size: var(--font-16pt);
+    color: var(--clr-grey-textcolour);
+}
+
+.textcontainer {
+    display: flex;
+    align-items: center;
+}
+.links {
+    display: flex;
+    list-style: none;
+}
+.links a {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 2rem;
+    color: var(--clr-grey-textcolour);
+}
+/* 
+=====================
+SECTION SHOWCASE
+=====================
+*/
+
+/* 
+=====================
+SECTION ABOUT US
+=====================
+*/
+
+/* 
+=====================
+SECTION SERVICES
+=====================
+*/
+
+/* 
+=====================
+APPOINTMENT
+=====================
+*/
+
+/* 
+=====================
+FOOTER
+=====================
+*/
+
+
+/* 
+=====================
+MEDIA QUERIES
+=====================
+*/
+
+@media (min-width: 768px) {
+.topbar {
+    display:flex;
+}
+}
+
+/* @media (min-width: 992px) {
+    
+}
+
+@media (min-width: 1200px) {
+    
+} */
