@@ -239,6 +239,7 @@ MEDIA QUERIES
     .fa-bars {
         font-size: 1.5rem;
 }
+}
 @media (min-width: 768px) {
 .topbar {
     display:flex;
