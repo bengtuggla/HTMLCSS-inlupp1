@@ -33,7 +33,7 @@ VARIABLES
     --font-p: 'Roboto', sans-serif;
     --font-h1: 'Roboto Slab', serif;
 
-    /*Fonts Colours*/
+    /*Fonts Sizes*/
     --font-16px: 1rem;
     --font-18px: 1.125rem;
     --font-22pt: 1.8rem;
@@ -251,7 +251,7 @@ SECTION SHOWCASE
 =====================
 */
 .showcase {
-    height: 100vh;
+    height: 50vh;
     width: 100vw;
     background: var(--clr-grey-placeholder);
     margin-top: 2rem;
@@ -280,13 +280,13 @@ SECTION SHOWCASE
     display: none;
 }
 .showcasecontent h1 {
-    font-size: var(--font-60px);
+    font-size: var(--font-30px);
     font-family: var(--font-h1);
     color: var(--clr-black-titlecolour);
     line-height: 1.1;
 }
 .showcasecontent p {
-    font-size: var(--font-18px);
+    font-size: var(--font-16px);
     font-family: var(--font-p);
     color: var(--clr-grey-textcolour);
 }
@@ -358,7 +358,7 @@ SECTION ABOUT US
 }
 .container-l2 h1 {
     font-family: var(--font-h1);
-    font-size: var(--font-20px);
+    font-size: var(--font-18px);
     /* font-size: var(--font-40px); */
 
     padding-right: 3rem;
@@ -448,6 +448,12 @@ MEDIA QUERIES
         width:50%;
         text-align: left;
     }
+    .showcasecontent h1 {
+        font-size: var(--font-60px);
+    }
+    .showcasecontent p {
+        font-size: var(--font-18px);
+    }
     .btn-primary {
         width: auto;
     }
@@ -461,6 +467,8 @@ MEDIA QUERIES
      .container-l2 p {
         font-size: var(--font-18px);
      }
+     .showcase {
+        height: 100vh;
 }
 @media (min-width: 992px) {
   .links a {
