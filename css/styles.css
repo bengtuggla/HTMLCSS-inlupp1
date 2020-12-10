@@ -38,7 +38,7 @@ VARIABLES
     --font-18px: 1.125rem;
     --font-22pt: 1.8rem;
     --font-24px: 1.5rem;
-    --font-30pt: 2.5rem;
+    --font-30px: 1.875rem;
     --font-40px: 2.5rem;
     --font-60px: 3.75rem;
     /* Colours */
@@ -243,7 +243,7 @@ SECTION MAIN MENU
     color: rgb(34, 34, 34);
     transition: all 0.5s linear;
     transform: scale(1.2);
-    font-weight: 600;
+
 }
 /* 
 =====================
@@ -259,8 +259,6 @@ SECTION SHOWCASE
 }
 .showcase .widercontainer {
     display: flex;
-    /* background: url("./images/placehold.png");
-    background-size: cover; */
     height: 100%;
     width: 80%;
     margin: auto;
@@ -270,14 +268,16 @@ SECTION SHOWCASE
 .showcase .container {
     
     height: 100%;
-    width:50%;
+    width:100%;
     position: absolute;
     top: 0;
     right: 2rem;
     padding-left: 1rem;
+    text-align: center;
 }
 .figur1 {
-    height: 40rem;
+    /* height: 40rem; */
+    display: none;
 }
 .showcasecontent h1 {
     font-size: var(--font-60px);
@@ -296,6 +296,17 @@ SECTION SHOWCASE
     color: white;
     margin-top: 3rem;
     font-family: var(--font-p);
+    width: 100%;
+    
+}
+.btn-primary:hover {
+    background: #199c89;
+    color: rgb(255, 240, 240);
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 0.75rem 2.8rem;
+    transition: all 0.4s linear;
+    transform: scale(1.1);
 }
 /* 
 =====================
@@ -310,6 +321,7 @@ SECTION ABOUT US
 
 }
 .aboutus .container {
+   
 }
 .contentleft {
     height: 80vh;
@@ -323,11 +335,13 @@ SECTION ABOUT US
 }
 .container-l h1 {
     font-family: var(--font-h1);
-    font-size: var(--font-40px);
+    font-size: var(--font-30px);
     color: var(--clr-black-titlecolour);
     border-bottom: 4px solid var(--clr-green-regular);
     margin-bottom: 3rem;
     line-height: 1.2;
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 .container-l h1 span {
     color: var(--clr-blue-bluecolour);
@@ -344,15 +358,18 @@ SECTION ABOUT US
 }
 .container-l2 h1 {
     font-family: var(--font-h1);
-    font-size: var(--font-40px);
-    padding-left: 3rem;
+    font-size: var(--font-20px);
+    /* font-size: var(--font-40px); */
+
+    padding-right: 3rem;
     color: var(--clr-blue-bluecolour);
 
  }
  .container-l2 p {
     font-family: var(--font-h1);
-    font-size: var(--font-18px);
-    padding-left: 3rem;
+    font-size: var(--font-16px);
+    /* font-size: var(--font-18px); */
+    padding-right: 3rem;
     color: var(--clr-black-titlecolour);
 }
 .container-r {
@@ -400,29 +417,57 @@ MEDIA QUERIES
     .fa-bars {
         font-size: 1.5rem;
 }
+/* .showcasecontent h1 {
+    font-size: 2rem;
+}
+.showcasecontent p {
+    font-size: 0.8rem;
+} */
 }
 @media (min-width: 768px) {
-.topbar {
-    display:flex;
-}
-.linkbox:not(.show) {
-    display: flex;
-}
-.fa-bars {
-  display: none;
+    .topbar {
+        display:flex;
+    }
+    .linkbox:not(.show) {
+        display: flex;
+    }
+    .fa-bars {
+    display: none;
 
+    }
+    .links a {
+        font-size: 0.7rem;  
+        padding-left: 1.1rem;
+    }
+    .figur1 {
+        display: flex;
+        height: 40rem;
+    }
+    .showcase .container {
+        height: 100%;
+        width:50%;
+        text-align: left;
+    }
+    .btn-primary {
+        width: auto;
+    }
+    .container-l h1 {
+        font-size: var(--font-40px);
+        text-align: left;
+    }
+    .container-l2 h1 {
+        font-size: var(--font-40px);
+     }
+     .container-l2 p {
+        font-size: var(--font-18px);
+     }
 }
-.links a {
-    font-size: 0.7rem;  
-    padding-left: 1.1rem;
- }
-}
-
 @media (min-width: 992px) {
   .links a {
     font-size: var(--font-16pt);
     padding-left: 1.1rem;
   }
+
    
 }
 @media (min-width: 1050px) {
