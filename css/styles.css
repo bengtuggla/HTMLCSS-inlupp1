@@ -105,8 +105,39 @@ SECTION TOP MENU
     width: 9%;
     font-size: 1rem;
 }
+/* Soc. media icons hover effekt */
+
 .fa-twitter {
+    color: var(--clr-blue-bluecolour);
+}
+.fa-twitter:hover {
     color: var(--clr-green-regular);
+    transition: all 0.4s linear;
+    transform: scale(1.8);
+}
+.fa-facebook-f {
+    color: var(--clr-blue-bluecolour);
+}
+.fa-facebook-f:hover {
+    color: var(--clr-green-regular);
+    transition: all 0.4s linear;
+    transform: scale(1.8);
+}
+.fa-google-plus-g {
+    color: var(--clr-blue-bluecolour);
+}
+.fa-google-plus-g:hover {
+    color: var(--clr-green-regular);
+    transition: all 0.4s linear;
+    transform: scale(1.8);
+}
+.fa-instagram {
+    color: var(--clr-blue-bluecolour);
+}
+.fa-instagram:hover {
+    color: var(--clr-green-regular);
+    transition: all 0.4s linear;
+    transform: scale(1.8);
 }
 
 /* 
@@ -125,6 +156,10 @@ SECTION MAIN MENU
 }
 .logo {
     display: flex;
+}
+.logo:hover {
+    transition: all 0.5s linear;
+    transform: scale(1.1);
 }
 .logotextbox {
     display: flex;
@@ -180,6 +215,12 @@ SECTION MAIN MENU
     text-decoration: none;
     padding-left: 2rem;
     color: var(--clr-grey-textcolour);
+}
+.links a:hover {
+    color: rgb(34, 34, 34);
+    transition: all 0.5s linear;
+    transform: scale(1.2);
+    font-weight: 600;
 }
 /* 
 =====================
