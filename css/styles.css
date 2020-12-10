@@ -251,7 +251,7 @@ SECTION SHOWCASE
 =====================
 */
 .showcase {
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
     background: var(--clr-grey-placeholder);
     margin-top: 2rem;
