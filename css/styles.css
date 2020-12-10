@@ -348,7 +348,7 @@ SECTION ABOUT US
 }
 .container-l p {
     font-family: var(--font-p);
-    font-size: var(--font-18px);
+    font-size: var(--font-16px);
     color: var(--clr-grey-textcolour);
     padding-bottom: 2rem;
 }
@@ -460,6 +460,9 @@ MEDIA QUERIES
     .container-l h1 {
         font-size: var(--font-40px);
         text-align: left;
+    }
+    .container-l p {
+        font-size: var(--font-18px);
     }
     .container-l2 h1 {
         font-size: var(--font-40px);
