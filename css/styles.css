@@ -36,7 +36,7 @@ VARIABLES
     /*Fonts Sizes*/
     --font-16px: 1rem;
     --font-18px: 1.125rem;
-    --font-22pt: 1.8rem;
+    --font-22px: 1.375rem;
     --font-24px: 1.5rem;
     --font-30px: 1.875rem;
     --font-40px: 2.5rem;
@@ -74,7 +74,7 @@ body, html {
     padding: 0.75rem 2.5rem;
     display: inline-block;
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: var(--font-18px);
     background: transparent;
     border: 1px solid transparent;
     border-radius: 0.5rem;
@@ -171,6 +171,10 @@ SECTION MAIN MENU
 }
 .logo {
     display: flex;
+
+}
+.logo img {
+    height: 65%;
 }
 .logo:hover {
     transition: all 0.5s linear;
@@ -263,7 +267,7 @@ SECTION SHOWCASE
     width: 80%;
     margin: auto;
     position: relative;
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
 }
 .showcase .container {
     
@@ -300,7 +304,7 @@ SECTION SHOWCASE
     
 }
 .btn-primary:hover {
-    background: #199c89;
+    background: var(--clr-blue-bluecolour);
     color: rgb(255, 240, 240);
     font-weight: bolder;
     font-size: 1.3rem;
@@ -404,15 +408,18 @@ MEDIA QUERIES
 =====================
 */
 @media (max-width: 450px){
-    .logo img {
-       display: none;
-    }
+   
     .logotext1, .logotext2{
-        font-size: 1rem;
+        /* font-size: 1rem; */
+        font-size: var(--font-22px);
+    }
+    .logotext2 {
+        width: 4rem;
     }
     .logotext3 {
-        font-size: 0.6rem;
-        top: 1rem;
+        /* font-size: 0.6rem; */
+        font-size: var(--font-16px);
+        top: 1.6rem;
     } 
     .fa-bars {
         font-size: 1.5rem;
@@ -428,6 +435,9 @@ MEDIA QUERIES
     .topbar {
         display:flex;
     }
+    .logo img {
+        height: 100%;
+    }
     .linkbox:not(.show) {
         display: flex;
     }
@@ -436,16 +446,18 @@ MEDIA QUERIES
 
     }
     .links a {
-        font-size: 0.7rem;  
-        padding-left: 1.1rem;
+        font-size: var(--font-18px);  
+        padding-left: 3rem;
     }
     .showcase .widercontainer {
         padding-top: 1rem;
+        height: 100%;
     }
     .figur1 {
         display: flex;
         /* height: 40rem; */
-        height: 30rem;
+        /* height: 29rem; */
+        height: 100%;
     }
     .showcase .container {
         height: 100%;
@@ -475,13 +487,14 @@ MEDIA QUERIES
         font-size: var(--font-18px);
      }
      .showcase {
-        height: 67vh;
+        /* height: 65vh; */
+        height: 44rem;
      }
      .aboutus .container {
          padding-top: 2rem;
      }
 }
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   .links a {
     font-size: var(--font-16pt);
     padding-left: 1.1rem;
@@ -500,5 +513,5 @@ MEDIA QUERIES
         font-size: var(--font-18pt);
         padding-left: 2rem;
       }
-}
+} */
 
