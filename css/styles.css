@@ -278,6 +278,7 @@ SECTION SHOWCASE
     right: 2rem;
     padding-left: 1rem;
     text-align: center;
+    padding-top: 3rem;
 }
 .figur1 {
     /* height: 40rem; */
@@ -324,9 +325,7 @@ SECTION ABOUT US
     /* justify-content: space-evenly; */
 
 }
-.aboutus .container {
-   
-}
+
 .contentleft {
     height: 80vh;
     display: flex;
@@ -424,13 +423,17 @@ MEDIA QUERIES
     .fa-bars {
         font-size: 1.5rem;
 }
-/* .showcasecontent h1 {
-    font-size: 2rem;
+.aboutus .container {
+   padding-top: 2rem;
 }
-.showcasecontent p {
-    font-size: 0.8rem;
-} */
 }
+
+@media (min-width: 450px){
+    .aboutus .container {
+        padding-top: 2rem;
+     }
+}
+
 @media (min-width: 768px) {
     .topbar {
         display:flex;
@@ -463,6 +466,7 @@ MEDIA QUERIES
         height: 100%;
         width:50%;
         text-align: left;
+        padding-top: 11rem;
     }
     .showcasecontent h1 {
         font-size: var(--font-60px);
