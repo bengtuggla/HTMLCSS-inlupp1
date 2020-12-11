@@ -323,7 +323,6 @@ SECTION ABOUT US
     width: 100vw;
     display: flex;
     /* justify-content: space-evenly; */
-    margin-bottom: 4rem;
 
 }
 
@@ -388,45 +387,6 @@ SECTION ABOUT US
 SECTION SERVICES
 =====================
 */
-.services {
-    margin-top: 4rem;
-}
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1fr 1fr;
-    width: 80%;
-    margin: auto;
-    height: 100vh;
-}
-.main {
-    grid-area: 1/1/1/4;
-    background: var(--clr-grey-textcolour);
-}
-.inspection {
-    grid-area: 2/1/2/2;
-    background: var(--clr-blue-bluecolour);
-}
-.removal {
-    grid-area: 2/2/2/3;
-    background: var(--clr-blue-backgrounddark);
-}
-.tartar {
-    grid-area: 2/3/2/4;
-    background: var(--clr-green-regular);
-}
-.cleaning {
-    grid-area: 4/1/3/2;
-    background: yellow;
-}
-.implants {
-    grid-area: 3/2/3/3;
-    background: red;
-}
-.protection {
-    grid-area: 3/3/3/4;
-    background: orange;
-}
 
 /* 
 =====================
@@ -536,7 +496,6 @@ MEDIA QUERIES
      }
      .aboutus .container {
          padding-top: 2rem;
-         /* height: 100vh; */
      }
 }
 /* @media (min-width: 992px) {
@@ -544,7 +503,6 @@ MEDIA QUERIES
     font-size: var(--font-16pt);
     padding-left: 1.1rem;
   }
-
    
 }
 @media (min-width: 1050px) {
@@ -559,4 +517,3 @@ MEDIA QUERIES
         padding-left: 2rem;
       }
 } */
-
