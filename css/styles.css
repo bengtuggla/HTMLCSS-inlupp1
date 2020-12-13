@@ -357,7 +357,7 @@ SECTION ABOUT US
     padding-bottom: 2rem;
 }
 .container-l2 {
-   display: flex;
+   display: block;
 
 }
 .container-l2 h1 {
@@ -546,8 +546,9 @@ APPOINTMENT
     height: 100%;
 }
 .appleft {
-    float: left;
-    width: 70%;
+    /* float: left; */
+    /* width: 70%; */
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -563,26 +564,37 @@ APPOINTMENT
     word-spacing: 0.1rem;
 }
 .appright {
-    float: right;
-    width: 30%;
+    /* float: right; */
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     /* align-items: center; */
 }
-.btn-secondary {
+.btn-sec {
+
+    text-align: center;
+    background:var(--clr-blue-bluecolour);
+    color: #fff;
+    /* height: 1.8rem; */
+    height: 23%;
+    /* width: 12rem; */
+    width: 40%;
+    margin: -2.5rem 0 2rem 0;
+    font-family: var(--font-p);
+    font-size: 0.7rem;
+    padding: 0rem 2rem;
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    outline: none;
+    cursor: pointer;  
+}
+
+.btn-sec:hover {
     background: #fff;
     color: var(--clr-blue-bluecolour);
-    margin: 3rem;
-    font-family: var(--font-p);
-    font-size: var(--font-16px);
-  
-
-    
-}
-.btn-secondary:hover {
-    background: var(--clr-blue-bluecolour);
-    color:  #fff;
     font-weight: bolder;
     border: 1px solid #FFF;
   
@@ -746,12 +758,12 @@ MEDIA QUERIES
     .container-l p {
         font-size: var(--font-18px);
     }
-    .container-l2 h1 {
+    /* .container-l2 h1 {
         font-size: var(--font-40px);
      }
      .container-l2 p {
         font-size: var(--font-18px);
-     }
+     } */
      .showcase {
         /* height: 65vh; */
         height: 44rem;
@@ -760,8 +772,26 @@ MEDIA QUERIES
          padding-top: 2rem;
          /* height: 100vh; */
      }
-    
-   
+     .gridsection {
+        padding: 0;
+    }
+    .appleft {
+        float: left;
+        width: 70%;
+    }
+    .appright {
+        float: right;
+        width: 30%;
+    }
+    .btn-sec {
+        background: #fff;
+        color: var(--clr-blue-bluecolour);
+        width: 70%;
+        height: 20%;
+        margin: 3rem;
+        /* text-align: center; */
+        padding: 0;
+    }
 }
 
 
@@ -779,9 +809,11 @@ MEDIA QUERIES
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
 }
-.gridsection {
-    padding: 0;
-}
+.btn-sec {
+    /* font-size: var(--font-16px); */
+    height: 3rem;
+    width: 16rem;
+    padding: 0.5rem 1rem;
 }
 
 @media (min-width: 1050px) {
@@ -795,7 +827,9 @@ MEDIA QUERIES
         font-size: var(--font-18pt);
         padding-left: 2rem;
       } */
-
+      .btn-sec {
+        font-size: var(--font-16px);
+      }
     
 }
 
@@ -811,6 +845,18 @@ MEDIA QUERIES
     .gridsection {
         padding: 4rem 7rem 5rem 7rem;
     }
-}
+    .container-l2 h1 {
+        font-size: var(--font-40px);
+     }
+     .container-l2 p {
+        font-size: var(--font-18px);
+     }
 
+}
+@media (min-width:1860px) {
+    .container-l2 {
+        display: flex;
+     
+     }
+} 
 
