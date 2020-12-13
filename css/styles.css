@@ -574,8 +574,8 @@ APPOINTMENT
 .btn-sec {
 
     text-align: center;
-    background:var(--clr-blue-bluecolour);
-    color: #fff;
+    background:#fff;
+    color: var(--clr-blue-bluecolour);
     /* height: 1.8rem; */
     height: 23%;
     /* width: 12rem; */
@@ -593,8 +593,8 @@ APPOINTMENT
 }
 
 .btn-sec:hover {
-    background: #fff;
-    color: var(--clr-blue-bluecolour);
+    background:var(--clr-blue-bluecolour);
+    color:#fff ;
     font-weight: bolder;
     border: 1px solid #FFF;
   
@@ -792,6 +792,7 @@ MEDIA QUERIES
         /* text-align: center; */
         padding: 0;
     }
+
 }
 
 
