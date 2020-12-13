@@ -465,15 +465,19 @@ SECTION SERVICES
     font-family: var(--font-h1);
     font-size: var(--font-22px);
     color: var(--clr-black-titlecolour);
+    
 }
 .gridsection p {
     font-family: var(--font-p);
     font-size: var(--font-18px);
     color: var(--clr-grey-textcolour);
+    padding-top: 1rem;
 }
 .gridsection img {
-    width: 9rem;
-    height: 9rem;
+    /* width: 9rem;
+    height: 9rem; */
+    width: 6.75rem;
+    height: 6.75rem;
     padding: 1rem;
     background: var(--clr-green-regular);
     background-size: 7.5rem 7.5rem;
@@ -511,7 +515,7 @@ SECTION SERVICES
 .gridsection li {
     /* background:; */
     height: 27.25rem;
-    padding: 6rem 5rem;
+    padding: 6rem 3rem;
 }
 
 /* 
@@ -598,7 +602,7 @@ MEDIA QUERIES
         text-align:center;
     }
     .content h1 {
-        font-size: var(--font-30px);
+        font-size: var(--font-20px);
     }
 
 }
