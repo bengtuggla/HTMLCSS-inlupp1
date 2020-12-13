@@ -388,21 +388,21 @@ SECTION ABOUT US
 SECTION SERVICES
 =====================
 */
-.services {
+/* .services {
     margin-top: 4rem;
-}
-.grid-container {
+} */
+/* .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.7fr 1fr 1fr;
-    /* grid-template-columns: repeat(autofit, minmax(1fr, 1fr)); */
+     grid-template-columns: repeat(autofit, minmax(1fr, 1fr)); 
     width: 80%;
     margin: auto;
     height: 100vh;
     grid-gap:1rem ;
-}
+} */
 
-.main {
+/* .main {
     grid-area: 1/1/1/4;
     background: var(--clr-grey-textcolour);
 }
@@ -429,7 +429,7 @@ SECTION SERVICES
 .protection {
     grid-area: 3/3/3/4;
     background: orange;
-}
+} */
 
 /* TESTGRID */
 /* TESTGRID */
@@ -502,8 +502,8 @@ SECTION SERVICES
 }
 .gridsection ul {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     /* background: ; */
     width: 100%;
     margin: auto;
@@ -675,14 +675,15 @@ MEDIA QUERIES
      .gridsection {
         padding:0;
      }
+   
      
 }
 
 @media (max-width: 600px){
-    .gridsection ul, .gridcontainer {
+    /* .gridsection ul, .gridcontainer {
         grid-template-columns: auto;
         grid-template-rows: auto;
-    }
+    } */
 
     .gridcontainer {
         text-align:center;
@@ -759,9 +760,8 @@ MEDIA QUERIES
          padding-top: 2rem;
          /* height: 100vh; */
      }
-     .gridsection {
-        padding: 0;
-    }
+    
+   
 }
 
 
@@ -775,9 +775,15 @@ MEDIA QUERIES
     font-size: var(--font-16pt);
     padding-left: 1.1rem;
   } */
- 
+  .gridsection ul, .gridcontainer {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+}
+.gridsection {
+    padding: 0;
 }
 }
+
 @media (min-width: 1050px) {
     /* .links a {
         font-size: var(--font-16pt);
@@ -789,18 +795,22 @@ MEDIA QUERIES
         font-size: var(--font-18pt);
         padding-left: 2rem;
       } */
-      .gridsection {
-        padding: 4rem 7rem 5rem 7rem;
-    }
+
+    
 }
 
-@media (min-width: 1430px) {
+@media (min-width: 1400px) {
     /* .links a {
         font-size: var(--font-18pt);
         padding-left: 2rem;
       } */
-    
-      
+      .gridsection ul, .gridcontainer {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+    }
+    .gridsection {
+        padding: 4rem 7rem 5rem 7rem;
+    }
 }
 
 
