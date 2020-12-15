@@ -4,7 +4,6 @@ IMPORTS
 =====================
 */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -64,7 +63,6 @@ body, html {
 }
 
 .container {
-    /* width: 73%; */
     width: 100%;
     margin: 0 auto;
 }
@@ -118,7 +116,6 @@ SECTION TOP MENU
     width: 9%;
     font-size: 1rem;
 }
-/* Soc. media icons hover effekt */
 
 .fa-twitter {
     color: var(--clr-blue-bluecolour);
@@ -300,7 +297,6 @@ SECTION ABOUT US
 }
 .aboutus .container .contentleft .container-l h1 {
     font-family: var(--font-h1);
-    /* font-size: var(--font-30px); */
     font-size: 1.6rem;
     color: var(--clr-black-titlecolour);
     border-bottom: 4px solid var(--clr-green-regular);
@@ -319,7 +315,6 @@ SECTION ABOUT US
     padding-bottom: 2rem;
 }
 .aboutus .container .contentleft .container-l2 {
-    /* display: inline-block; */
     display: block;
  }
  .aboutus .container .contentleft .container-l2 h1 {
@@ -419,7 +414,6 @@ SECTION SERVICES
     transition: all 0.5s linear;
     transform: scale(1.1);
     box-shadow: 3px 6px 8px 3px #888;
-    tr
 }
 
 /* 
@@ -452,15 +446,12 @@ SECTION SERVICES
     height: 100%;
 }
 .appleft {
-    /* float: left; */
-    /* width: 70%; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex: 2;
-   
 }
 .appleft span {
     font-family: var(--font-h1);
@@ -471,22 +462,17 @@ SECTION SERVICES
     word-spacing: 0.1rem;
 }
 .appright {
-    /* float: right; */
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    /* align-items: center; */
     flex: 1;
 }
 .btn-sec {
-
     text-align: center;
     background:#fff;
     color: var(--clr-blue-bluecolour);
-    /* height: 1.8rem; */
     height: 23%;
-    /* width: 12rem; */
     width: 40%;
     margin: -2.5rem 0 2rem 0;
     font-family: var(--font-p);
@@ -505,7 +491,6 @@ SECTION SERVICES
     color:#fff ;
     font-weight: bolder;
     border: 1px solid #FFF;
-  
 }
 
 /* 
@@ -519,9 +504,6 @@ footer {
     height: 4rem;
     width: 100%;
     margin: auto;
-    /* text-align: center; */
-  
-  
 }
 footer .footcontainer {
     width: 100%;
@@ -580,7 +562,6 @@ MEDIA QUERY 768px
     .showcase .container img {
         display: flex;
     }
-
     .showcase .container .showcasecontent h1 {
         font-size: 3rem;
         text-align: left;
@@ -600,7 +581,6 @@ MEDIA QUERY 768px
         /* no padding big view */
         padding: 0;
     }
-  
     .aboutus .container .contentleft .container-l h1 {
         font-size: var(--font-40px);
         text-align:left;
@@ -631,7 +611,6 @@ MEDIA QUERY 768px
     width: 70%;
     height: 20%;
     margin: 3rem;
-    /* text-align: center; */
     padding: 0;
 }
 
