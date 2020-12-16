@@ -412,7 +412,6 @@ SECTION SERVICES
 }
 .gridsection li:hover {
     transition: all 0.5s linear;
-    transform: scale(1.1);
     box-shadow: 3px 6px 8px 3px #888;
 }
 
@@ -493,7 +492,7 @@ SECTION SERVICES
     font-size: 0.7rem;
     padding: 0rem 1rem;
     border: 1px solid white;
-    border-radius: 0.5rem;
+    border-radius: 0.7rem;
     outline: none;
     cursor: pointer;  
 }
@@ -501,7 +500,7 @@ SECTION SERVICES
     background:var(--clr-blue-bluecolour);
     color:#fff ;
     font-weight: bolder;
-    border: 1px solid #FFF;
+    border: 2px solid #FFF;
 }
 
 /*
@@ -884,7 +883,6 @@ MEDIA QUERY 1200px
         height: 4rem;
         font-size: var(--font-18px);
         font-weight: bold;
-
     }
   }
 
