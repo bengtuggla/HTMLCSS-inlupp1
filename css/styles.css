@@ -443,9 +443,10 @@ SECTION SERVICES
     content: "";
     background: white;
     bottom: 0;
-    left: 13.5rem;
-    right: 13.5rem;
+    left: 11.5rem;
+    right: 11.5rem;
     height: 1px;
+    opacity: 0.6;
 } 
 .appointments .overlay {
     background:rgba(255, 255, 255, 0.2);
