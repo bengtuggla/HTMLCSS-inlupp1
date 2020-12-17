@@ -339,8 +339,8 @@ SECTION SERVICES
     background: var(--clr-white-background);
 } 
 .gridcontainer {
-    display: grid;
-    grid-template-columns: auto ;
+    /* display: grid;
+    grid-template-columns: auto ; */
     padding: 4rem 0;
     background: var(--clr-white-background);
     width: 80%;
@@ -570,11 +570,9 @@ MEDIA QUERY 768px
         display: flex;
     }
     .showcase .container .showcasecontent h1 {
-        font-size: 3rem;
+        /* font-size: 3rem; */
+        font-size: 2rem;
         text-align: left;
-    }
-    .showcase .container .showcasecontent p {
-        font-size: var(--font-18px);
     }
     .btn-primary {
        width: auto;
@@ -622,6 +620,13 @@ MEDIA QUERY 992px
     .container {
       /* max-width: 726px; */
       max-width: 960px;
+    }
+    /* SHOWCASE MEDIAQUERY */
+    .showcase .container .showcasecontent h1 {
+        font-size: 3rem;
+    }
+    .showcase .container .showcasecontent p {
+        font-size: var(--font-18px);
     }
     /* APPOINTMENTS MEDIAQUERY */
     
