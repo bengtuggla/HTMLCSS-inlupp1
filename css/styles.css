@@ -410,6 +410,7 @@ SECTION SERVICES
     height: 27.25rem;
     padding: 6rem 3rem;
     background: white;
+    border-radius: 0.5rem;
 
 }
 .gridsection li:hover {
