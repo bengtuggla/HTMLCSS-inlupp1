@@ -334,19 +334,21 @@ SECTION ABOUT US
 SECTION SERVICES
 =====================
 */
-
+.gridbox {
+    width: 100%;
+    background: var(--clr-white-background);
+} 
 .gridcontainer {
     display: grid;
     grid-template-columns: auto ;
     padding: 4rem 0;
-    background: var(--clr-grey-textcolour);
+    background: var(--clr-white-background);
     width: 80%;
     height: 11rem;
     margin: auto;
     text-align: center;
-    background: var(--clr-white-background);
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 .content h1 {
     border-bottom: 0.25rem solid var(--clr-green-regular);
@@ -388,7 +390,7 @@ SECTION SERVICES
     width: 33%;
 }
 .gridsection {
-    width: 80%;
+    width: 90%;
     margin: auto;
     background: var(--clr-white-background);
     padding:0;
@@ -407,6 +409,7 @@ SECTION SERVICES
 .gridsection li {
     height: 27.25rem;
     padding: 6rem 3rem;
+    background: white;
 
 }
 .gridsection li:hover {
@@ -431,7 +434,7 @@ SECTION SERVICES
     display: flex;
     justify-content: space-between;
     margin: auto;
-    width: 80%;
+    width: 77%;
     height: 100%;
 }
 .appointments:after {
@@ -447,12 +450,11 @@ SECTION SERVICES
     background:rgba(255, 255, 255, 0.2);
     width: 100%;
     height: 100%;
-    z-index: 3;
 
 }
 .appleft {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100%;
     flex: 1.5;
@@ -474,7 +476,7 @@ SECTION SERVICES
     justify-content: center;
     align-items: center;
     height: 100%;
-    flex: 1;
+    flex: 1.2;
 }
 
 .btn-sec {
@@ -599,11 +601,12 @@ MEDIA QUERY 768px
   .gridsection ul, .gridcontainer {
     grid-template-columns: repeat(2, auto);
     grid-template-rows: auto;
-}
-/* APPOINTMENTS MEDIAQUERY */
+
+}/* APPOINTMENTS MEDIAQUERY */
+
     .appright {
     justify-content: flex-end;
-    padding-right: 4rem;
+    /* padding-right: 4rem; */
     }
 
 }
