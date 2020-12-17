@@ -669,7 +669,6 @@ MEDIA QUERY 1200px
   @media (min-width: 1200px) {
     .container{
       max-width: 1140px;
-      border: 1px solid red;
     }
     /* SHOWCASE MEDIAQUERY */
     .showcase .showbox {
@@ -724,9 +723,9 @@ MEDIA QUERY 1200px
 
   }
   
-  
+/*   
   @media (min-width: 1400px) {
     .container{
       max-width: 1330px;
-    }
+    } */
 }
