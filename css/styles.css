@@ -122,7 +122,7 @@ SECTION TOP MENU
 }
 .fa-twitter:hover {
     color: var(--clr-green-regular);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     transform: scale(1.8);
 }
 .fa-facebook-f {
@@ -130,7 +130,7 @@ SECTION TOP MENU
 }
 .fa-facebook-f:hover {
     color: var(--clr-green-regular);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     transform: scale(1.8);
 }
 .fa-google-plus-g {
@@ -138,7 +138,7 @@ SECTION TOP MENU
 }
 .fa-google-plus-g:hover {
     color: var(--clr-green-regular);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     transform: scale(1.8);
 }
 .fa-instagram {
@@ -146,7 +146,7 @@ SECTION TOP MENU
 }
 .fa-instagram:hover {
     color: var(--clr-green-regular);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     transform: scale(1.8);
 }
 
@@ -174,7 +174,7 @@ SECTION MAIN MENU
     width: 10rem;
 } 
 .logo:hover {
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     transform: scale(1.1);
 }
 
@@ -187,7 +187,7 @@ SECTION MAIN MENU
 }
 .fa-bars:hover {
     color: var(--clr-green-regular);
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     transform: scale(1.1);
 }
 
@@ -210,7 +210,7 @@ SECTION MAIN MENU
 }
 .links a:hover {
     color: rgb(34, 34, 34);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
     transform: scale(1.2);
 }
 
@@ -266,8 +266,8 @@ SECTION SHOWCASE
     font-weight: bolder;
     font-size: 1.3rem;
     padding: 0.75rem 2.8rem;
-    transition: all 0.4s linear;
-    transform: scale(1.05);
+    transition: all 0.3s linear;
+    transform: scale(1);
 } 
 
 
@@ -384,8 +384,10 @@ SECTION SERVICES
 }
 .gridsection img:hover {
     background: var(--clr-blue-bluecolour);
-    box-shadow: 0 0 4pt 6pt var(--clr-green-regular);
-    transition: all 0.5s linear;
+    /* box-shadow: 0 0 4pt 6pt var(--clr-green-regular); */
+    /* box-shadow: 0 0 4pt 6pt var(--clr-blue-bluecolour); */
+    box-shadow: 0 0 4pt 6pt rgba(43, 168, 236, 0.5);
+    transition: all 0.3s linear;
 }
 
 .content {
@@ -418,6 +420,7 @@ SECTION SERVICES
 .gridsection li:hover {
     transition: all 0.5s linear;
     box-shadow: 3px 6px 8px 3px #888;
+
 }
 
 /* 
@@ -526,7 +529,7 @@ footer .footcontainer {
     align-items: center;
     font-family: var(--font-p);
     font-size: var(--font-18px);
-    color: var(--clr-grey-textcolour);
+    color: #F3FBFF;
 }
 
 
