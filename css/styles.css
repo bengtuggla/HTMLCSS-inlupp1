@@ -382,10 +382,9 @@ SECTION SERVICES
     background-size: 7.5rem 7.5rem;
     border-radius: 50%;
 }
-.gridsection img:hover {
+
+.gridsection li:hover > img{
     background: var(--clr-blue-bluecolour);
-    /* box-shadow: 0 0 4pt 6pt var(--clr-green-regular); */
-    /* box-shadow: 0 0 4pt 6pt var(--clr-blue-bluecolour); */
     box-shadow: 0 0 4pt 6pt rgba(43, 168, 236, 0.5);
     transition: all 0.3s linear;
 }
@@ -420,6 +419,7 @@ SECTION SERVICES
 .gridsection li:hover {
     transition: all 0.5s linear;
     box-shadow: 3px 6px 8px 3px #888;
+    transition-delay: 0.5s;
 
 }
 
